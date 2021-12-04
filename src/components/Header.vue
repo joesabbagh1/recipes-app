@@ -4,11 +4,11 @@
     tile
   >
     <v-toolbar color="primary">
-      <v-toolbar-title>Logo</v-toolbar-title>
+      <router-link to="/">yo</router-link>
 
       <v-spacer></v-spacer>
 
-      <router-link to="/recipe-content">yo</router-link>
+      
       <v-btn icon>
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
