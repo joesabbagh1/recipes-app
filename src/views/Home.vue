@@ -12,10 +12,7 @@
               {{item.title}}
             </v-card-title>
           </v-card>
-        </v-col> 
-        <div>
-          {{recipes}}
-        </div>
+        </v-col>
         <!-- <v-col cols="4" v-if="index===6" :key="index" align="center">
             <v-btn
               class="secondary mt-16"

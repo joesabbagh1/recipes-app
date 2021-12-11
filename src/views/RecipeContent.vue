@@ -1,11 +1,13 @@
 <template>
   <div>
-      <RecipeContent :recipe='recipes[0]' />
+    <ImageBackground />
+    <RecipeContent :recipe='recipes[0]' />
   </div>
 </template>
 
 <script>
 import RecipeContent from '../components/Recipe-content.vue';
+import ImageBackground from '../components/RecipeContent/ImageBackground.vue'
 export default {
     data: () => ({
         recipes:[
@@ -28,7 +30,8 @@ export default {
   }),
 
     components: {
-        RecipeContent
+        RecipeContent,
+        ImageBackground,
     },
 }
 </script>
