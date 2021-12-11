@@ -3,7 +3,11 @@
     flat
     tile
   >
-    <v-toolbar color="primary">
+    <v-toolbar>
+      <router-link to="/">home</router-link>
+       <v-spacer></v-spacer>
+      <router-link to="/recipe-content">recipe content</router-link>
+       <v-spacer></v-spacer>
       <router-link to="/">yo</router-link>
 
       <v-spacer></v-spacer>

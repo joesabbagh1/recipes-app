@@ -25,11 +25,13 @@
       <v-row>
           <v-col align="right">
             <v-btn
-                class="secondary"
+              class="secondary mt-16"
+              x-large 
+              rounded
             >
-                <span class="text-h6 text-uppercase">
-                    add a recipe
-                </span>
+              <span class="text-h6 text-uppercase">
+                  add a recipe
+              </span>
             </v-btn>
           </v-col>
       </v-row>

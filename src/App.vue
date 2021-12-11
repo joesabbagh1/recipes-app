@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-main>
+    <v-main class="grey">
       <Header />
       <router-view />
     </v-main>
