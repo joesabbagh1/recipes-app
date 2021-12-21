@@ -1,19 +1,19 @@
 <template>
   <div>
-    <ImageBackground />
+    <ImageBackground :recipe='recipes[0]' />
     <RecipeContent :recipe='recipes[0]' />
   </div>
 </template>
 
 <script>
-import RecipeContent from '../components/Recipe-content.vue';
-import ImageBackground from '../components/RecipeContent/ImageBackground.vue'
+import RecipeContent from '../components/RecipeContent/Recipe.vue';
+import ImageBackground from '../components/RecipeContent/ImageBackground.vue';
 export default {
     data: () => ({
         recipes:[
         {
             title: 'pizza',
-            image: 'https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/216054.jpg',
+            image: 'dccccccc.jpg',
             ingrediants: [
                 '2 eggs',
                 '1kg flour',
@@ -32,6 +32,7 @@ export default {
     components: {
         RecipeContent,
         ImageBackground,
+        
     },
 }
 </script>

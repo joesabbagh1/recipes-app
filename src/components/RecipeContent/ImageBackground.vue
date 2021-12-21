@@ -1,32 +1,23 @@
 <template>
-  <v-row >
-      <v-container class="ContainerSize" :style="backgroundStyle">
-          <v-row>
-              <v-col>
-                  <div>
-                    <span class="Title">
-                        {{title}}
-                    </span>
-                    <p class="text">
-                        {{description}}
-                    </p>
-                  </div>
-              </v-col>
-          </v-row>
-      </v-container>
-  </v-row>
+  <v-container fluid class="ContainerSize box" :style="backgroundStyle">
+      <v-row>
+          <v-col cols="12" align="center">
+            <div class="text-h1 text-uppercase secondary--text">
+              {{recipe.title}}
+            </div>
+          </v-col>
+      </v-row>
+  </v-container>
 </template>
 
 <script>
 export default {
-    props:{
-        image: String,
-        title: String,
-        description: String,
-    },
+    props:[
+        'recipe',
+    ],
     computed: {
       backgroundStyle() {
-        let bg= {"background-image":`url('${this.image}')`}
+        let bg= {"background-image":`url('${this.recipe.image}')`}
         console.log(bg);
         return bg;
       }
@@ -36,27 +27,10 @@ export default {
 
 <style land="scss" scoped>
 .ContainerSize{
-    max-width: 100%;
-    height: 30rem;
-    background-size: cover;
-}
-.right-col{
   height: 30rem;
-  background-color: rgb(0, 0, 0,0.5);
-  padding: 4rem 6rem 0rem 4rem;
-}
-.yellow-line{
-    height: 0.3rem;
-    background: var(--v-secondary-base);
-    margin-bottom: 1.5rem;
-}
-.Title{
-  color: white;
-  font-size: 2rem; 
-}
-.text{
-  color: white;
-  margin-top: 2rem;
-  font-size: 1rem;
+  background-size: cover;
+  
+  display: flex;
+  align-items: center;
 }
 </style>
